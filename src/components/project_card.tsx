@@ -1,8 +1,5 @@
 import { Link, graphql, StaticQuery } from 'gatsby';
-import { format } from 'path';
-import { string } from 'prop-types';
 import React from 'react';
-import About from '../pages/about';
 import Slider from "react-slick";
 import Img from 'gatsby-image';
 import 'slick-carousel/slick/slick.css'
@@ -25,7 +22,7 @@ const ProjectCard: React.FC<Props> = ({title, slug, excerpt, date, images }) => 
               node {
                 id
                 fluid(maxWidth: 600, quality: 100) {
-                    ...GatsbyImageSharpFluid_withWebp
+                    ...GatsbyImageSharpFluid_noBase64
                 }
               }
             }
@@ -40,13 +37,12 @@ const ProjectCard: React.FC<Props> = ({title, slug, excerpt, date, images }) => 
                   <Link to={slug}>{title}</Link>
                 </h3>
                 <small>{date}</small>
-                <p> {console.log(imagesFromQuery)} </p>
                 <Slider>
                   {
                     imagesFromQuery.map( ({node}) => {
                       var filename = node.fluid.src.replace(/^.*[\\\/]/, '')
                         if (images.includes(filename)) {
-                          return(<Img fluid={node.fluid}/>)
+                          return(<Img key={node.id} fluid={node.fluid}/>)
                         }
                     })
                   }
