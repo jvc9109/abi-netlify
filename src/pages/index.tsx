@@ -20,7 +20,7 @@ const Index: React.FC<Props> = ({data}) => {
       <Head title="All Projects"/>
       <Bio />
       <div className="home__subtittle_projects">
-      <h1> PROYECTOS </h1>
+      <h2> PROYECTOS </h2>
       </div>
       <article>
         <Container fluid="md" className={`page-content`}>

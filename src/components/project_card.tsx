@@ -34,14 +34,14 @@ const ProjectCard: React.FC<Props> = ({title, slug, excerpt, date, images }) => 
         const imagesFromQuery = data.allImageSharp.edges
         return(
             <Row className="project-cards__container">
-              <Col>
+              <Col className="project-cards__text_wrapper">
                 <h3>
                     <Link to={slug}>{title}</Link>
                   </h3>
                   <p dangerouslySetInnerHTML={{__html: excerpt}} />
-                  <Link className="more_details___link" to={slug}> &#8594; Ver más </Link>
+                  <Link className="more_details___link" to={slug}> &#8594; </Link>
               </Col>
-                <Col md="6" >
+                <Col md="8" >
                     {
                       imagesFromQuery.map( ({node}) => {
                         var filename = node.fluid.src.replace(/^.*[\\\/]/, '')

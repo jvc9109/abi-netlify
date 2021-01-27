@@ -3,11 +3,11 @@ module.exports = {
     title: `Abril Celaya Hernandez`,
     description: `Técnico superior de diseño de Interiores con especialidad en amueblamiento`,
     author: {
-      name: "Abril Celaya",
+      name: "Abril C. Hernández",
       email: "abicelaya@gmail.com"
     },
     social: {
-      instagram: 'https://www.instagram.com/abrilchernandez/'
+      pinterest: 'https://gr.pinterest.com/abrilcelaya/'
     }
   },
   plugins: [

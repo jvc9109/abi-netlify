@@ -74,7 +74,7 @@ h1 {
 }
 
 h2 {
-  font-weight: 400;
+  font-weight: 500;
   margin-top: 2.1rem;
   margin-bottom: 1.4rem;
   font-size: 2.2rem;
@@ -82,7 +82,7 @@ h2 {
 }
 
 h3 {
-  font-weight: 600;
+  font-weight: 400;
   font-size: 1.7rem;
   margin-top: 2rem;
   margin-bottom: 1.4rem;
@@ -101,7 +101,7 @@ hr {
 
 article {
   position: relative;
-  padding: 5rem 0rem;
+  padding: 2rem 0rem;
 }
 
 section {
@@ -268,12 +268,17 @@ div.table-wrapper {
 const customeStyles = () => `
 .home__subtittle_projects{
   text-align: center;
+  padding-top: 2em;
 }
 .project-cards__container {
   padding-bottom: 4em;
 }
+
+.project-cards__text_wrapper > p {
+  font-size: 1.2rem;
+}
 .more_details___link {
-  font-size: 1em;
+  font-size: 1.2em;
 }
 `
 export const GlobalStyle = createGlobalStyle`
