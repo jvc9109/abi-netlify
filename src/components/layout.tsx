@@ -1,6 +1,7 @@
 import React from 'react'
 import {Link} from 'gatsby'
 import {GlobalStyle, styled} from '../styles/theme'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const StyledNav = styled.nav`
   ul {

@@ -4,7 +4,7 @@ date: '2020-01-20'
 published: true
 layout: projects
 images: ['project1_1.jpg']
-slug: '/project1'
+slug: '/project2'
 ---
 
 Aquí se escribe lo que vaya a ir en el proyecto

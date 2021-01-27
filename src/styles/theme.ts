@@ -15,7 +15,6 @@ export const theme = {
 
 const reset = () => `
 html {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -60,14 +59,14 @@ body {
   margin-left: auto;
   margin-right: auto;
   padding-left: 12.5%;
-  font-family: Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', Georgia, serif;
+  font-family: Montserrat, serif;
   background-color: white;
   color: #111;
   max-width: 1400px;
 }
 
 h1 {
-  font-weight: 400;
+  font-weight: 500;
   margin-top: 4rem;
   margin-bottom: 1.5rem;
   font-size: 3.2rem;
@@ -75,7 +74,6 @@ h1 {
 }
 
 h2 {
-  font-style: italic;
   font-weight: 400;
   margin-top: 2.1rem;
   margin-bottom: 1.4rem;
@@ -84,8 +82,7 @@ h2 {
 }
 
 h3 {
-  font-style: italic;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 1.7rem;
   margin-top: 2rem;
   margin-bottom: 1.4rem;
@@ -121,6 +118,7 @@ ul {
 
 p {
   margin-top: 1.4rem;
+  font-weight: 200;
   margin-bottom: 1.4rem;
   padding-right: 0;
   vertical-align: baseline;
@@ -190,9 +188,6 @@ a:visited {
   color: inherit;
 }
 
-img {
-  max-width: 100%;
-}
 
 div.fullwidth,
 table.fullwidth {
@@ -204,48 +199,7 @@ div.table-wrapper {
   font-family: 'Trebuchet MS', 'Gill Sans', 'Gill Sans MT', sans-serif;
 }
 
-code {
-  font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace;
-  font-size: 1rem;
-  line-height: 1.42;
-}
 
-h1 > code,
-h2 > code,
-h3 > code {
-  font-size: 0.8em;
-}
-
-pre.code {
-  font-size: 0.9rem;
-  width: 52.5%;
-  margin-left: 2.5%;
-  overflow-x: auto;
-}
-
-pre.code.fullwidth {
-  width: 90%;
-}
-
-.fullwidth {
-  max-width: 100%;
-  clear: both;
-}
-
-.iframe-wrapper {
-  position: relative;
-  padding-bottom: 56.25%; /* 16:9 */
-  padding-top: 25px;
-  height: 0;
-}
-
-.iframe-wrapper iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
 
 @media (max-width: 760px) {
   body {
@@ -311,8 +265,19 @@ pre.code.fullwidth {
   }
 }
 `
-
+const customeStyles = () => `
+.home__subtittle_projects{
+  text-align: center;
+}
+.project-cards__container {
+  padding-bottom: 4em;
+}
+.more_details___link {
+  font-size: 1em;
+}
+`
 export const GlobalStyle = createGlobalStyle`
 ${reset()}
 ${styles()}
+${customeStyles()}
 `

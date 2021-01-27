@@ -4,6 +4,7 @@ import Layout from '../components/layout'
 import Head from '../components/head'
 import Bio from '../components/bio';
 import ProjectCard from '../components/project_card';
+import { Container } from 'react-bootstrap';
 
 
 interface Props {
@@ -18,15 +19,18 @@ const Index: React.FC<Props> = ({data}) => {
     <Layout title={siteTitle}>
       <Head title="All Projects"/>
       <Bio />
+      <div className="home__subtittle_projects">
+      <h1> PROYECTOS </h1>
+      </div>
       <article>
-        <div className={`page-content`}>
-          {projects.map(({node}) => {
+        <Container fluid="md" className={`page-content`}>
+        {projects.map(({node}) => {
             const title = node.frontmatter.title || node.fields.slug
             return (
               <ProjectCard key={node.fields.slug} slug={node.fields.slug} excerpt={node.excerpt} date={node.frontmatter.date} title={title} images={node.frontmatter.images}/>
             )
           } )}
-        </div>
+        </Container>
       </article>
     </Layout>
   )

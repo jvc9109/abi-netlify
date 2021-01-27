@@ -83,6 +83,17 @@ interface PageQueryData {
 
 }
 
+interface ImageQueryData {
+  allImageSharp: {
+    edges: {
+      node: {
+        id: string
+        fluid: object
+      }
+    }[]
+  }
+}
+
 export const pageQuery = graphql`
   query ProjectBySlug($slug: String!) {
     site {

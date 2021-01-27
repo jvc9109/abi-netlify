@@ -25,7 +25,15 @@ module.exports = {
         path: `${__dirname}/src/projects`,
       },
     },
-
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Montserrat\:100,200,300,400,500,700`, // you can also specify font weights and styles
+        ],
+        display: 'swap'
+      }
+    },
     {
       resolve: `gatsby-transformer-remark`,
       options: {
