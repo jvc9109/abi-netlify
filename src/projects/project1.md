@@ -3,9 +3,15 @@ title: Ejemplo de markdown para proyecto
 date: '2020-01-20'
 published: true
 layout: projects
-images: ['project1_1.jpg']
+images: ['project1_featured.jpg']
 slug: '/project1'
 ---
+
+![](../images/project1/interior_derecho.jpg) ![](../images/project1/interior_derecho.jpg)
+
+
+![](../images/project1/interior_derecho.jpg) ![](../images/project1/interior_derecho.jpg)
+
 
 Aquí se escribe lo que vaya a ir en el proyecto
 
@@ -21,7 +27,7 @@ ahora lo miro esto es texto normal. <br/>
 linea en vlaco
 
 
-![Hopper The Rabbit](../images/project1/project1_1.jpg)
+
 
 ```js
 console.log(`Hello world, 1 + 1 = ${1 + 1}`);

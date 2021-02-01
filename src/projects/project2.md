@@ -3,7 +3,7 @@ title: Ejemplo de markdown para proyecto
 date: '2020-01-20'
 published: true
 layout: projects
-images: ['project1_1.jpg']
+images: ['project1_featured.jpg']
 slug: '/project2'
 ---
 
