@@ -204,9 +204,9 @@ div.table-wrapper {
 
 @media (max-width: 760px) {
   body {
-    width: 84%;
-    padding-left: 8%;
-    padding-right: 8%;
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 4%;
   }
 
   hr,
@@ -214,6 +214,9 @@ div.table-wrapper {
   section > footer,
   section > table {
     width: 100%;
+  }
+  p {
+    font-size: 15px
   }
 
   pre.code {
@@ -287,6 +290,24 @@ const customeStyles = () => `
 .gallery__row__column{
   padding-left: 1em;
   padding-right: 1em;
+}
+
+@media (max-width: 760px) {
+  .gallery__row{
+    margin-bottom: 0;
+  }
+  .gallery__row__column{
+    margin-bottom: 1em;
+  }
+  .project-cards__text_wrapper > p {
+    font-size: 1em;
+  }
+  .more_details___link {
+    margin-bottom: 1em;
+  }
+  .more_details___wrapper {
+    margin-top: -2em;
+  }
 }
 `
 export const GlobalStyle = createGlobalStyle`

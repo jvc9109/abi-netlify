@@ -23,14 +23,14 @@ const Index: React.FC<Props> = ({data}) => {
       <h2> PROYECTOS </h2>
       </div>
       <article>
-        <Container fluid="md" className={`page-content`}>
+        <div className={`page-content`}>
         {projects.map(({node}) => {
             const title = node.frontmatter.title || node.fields.slug
             return (
               <ProjectCard key={node.fields.slug} slug={node.fields.slug} excerpt={node.excerpt} date={node.frontmatter.date} title={title} images={node.frontmatter.images}/>
             )
           } )}
-        </Container>
+        </div>
       </article>
     </Layout>
   )

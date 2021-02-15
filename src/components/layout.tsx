@@ -2,7 +2,7 @@ import React from 'react'
 import {Link} from 'gatsby'
 import {GlobalStyle, styled} from '../styles/theme'
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import {ReactComponent as HomeIcon} from '../images/home-solid.svg'
 const StyledNav = styled.nav`
   ul {
     list-style-type: none;
@@ -12,7 +12,7 @@ const StyledNav = styled.nav`
 
   li {
     display: inline-block;
-    margin: 16px;
+    margin-top: 2em;
 
     a {
       background: none;
@@ -34,13 +34,9 @@ const Layout: React.FC<Props> = ({children}) => (
     <StyledNav className="navigation">
       <ul>
         <li>
-          <Link to={`/`}>&</Link>
-        </li>
-        <li>
-          <Link to={`/tags`}>Tags</Link>
-        </li>
-        <li>
-          <Link to={`/about`}>About</Link>
+          <Link to={`/`}>
+            Inicio
+          </Link>
         </li>
       </ul>
     </StyledNav>
