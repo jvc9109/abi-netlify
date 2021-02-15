@@ -118,10 +118,11 @@ ul {
 
 p {
   margin-top: 1.4rem;
-  font-weight: 200;
+  font-weight: 300;
   margin-bottom: 1.4rem;
   padding-right: 0;
   vertical-align: baseline;
+  text-align: justify;
 }
 
 blockquote {
@@ -279,6 +280,13 @@ const customeStyles = () => `
 }
 .more_details___link {
   font-size: 1.2em;
+}
+.gallery__row{
+  margin-bottom: 2em;
+}
+.gallery__row__column{
+  padding-left: 1em;
+  padding-right: 1em;
 }
 `
 export const GlobalStyle = createGlobalStyle`
