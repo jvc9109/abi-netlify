@@ -43,7 +43,7 @@ const ProjectCard: React.FC<Props> = ({title, slug, excerpt, date, images }) => 
                     <Link className="more_details___link" to={slug}> &#8594; </Link>
                   </p>
               </Col>
-                <Col md="8" className="order-first order-md-last">
+                <Col md="7" className="order-first order-md-last">
                     {
                       imagesFromQuery.map( ({node}) => {
                         var filename = node.fluid.src.replace(/^.*[\\\/]/, '')
